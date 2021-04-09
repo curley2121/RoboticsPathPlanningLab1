@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | RoboticsUnityProjectLab1</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1200px; height: 750px; background: #231F20"></canvas>
+    <script src="Build/robotics.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/robotics.data.br",
+        frameworkUrl: "Build/robotics.framework.js.br",
+        codeUrl: "Build/robotics.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "RoboticsLab",
+        productName: "RoboticsUnityProjectLab1",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
